@@ -40,6 +40,8 @@ topology:
       #  - mod2-lan2:/lab-folder
 
   links:
+    - endpoints: ["rtrB:eth3", "rtrC:eth3"]
+
     - endpoints: ["lan1:eth1", "rtrA:eth1"]
 
     - endpoints: ["rtrA:eth2", "rtrB:eth1"]
