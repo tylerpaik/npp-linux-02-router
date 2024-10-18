@@ -1,0 +1,295 @@
+{
+  "name": "mod2-bgp",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-d27f5b915ebf",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "2001:172:20:20::/64",
+        "ipv6-gw": "2001:172:20:20::1",
+        "mtu": "1500",
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "lan1": {
+      "index": "0",
+      "shortname": "lan1",
+      "longname": "clab-mod2-bgp-lan1",
+      "fqdn": "lan1.mod2-bgp.io",
+      "group": "",
+      "labdir": "/vagrant/clab-mod2-bgp/lan1",
+      "kind": "linux",
+      "image": "ekellercu/network-testing:v0.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d27f5b915ebf",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/vagrant/clab-mod2-bgp/lan1",
+        "clab-node-name": "lan1",
+        "clab-node-type": "",
+        "clab-topo-file": "/vagrant/demo2-bgp/diamond-mod2.clab.yml",
+        "containerlab": "mod2-bgp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "lan2": {
+      "index": "1",
+      "shortname": "lan2",
+      "longname": "clab-mod2-bgp-lan2",
+      "fqdn": "lan2.mod2-bgp.io",
+      "group": "",
+      "labdir": "/vagrant/clab-mod2-bgp/lan2",
+      "kind": "linux",
+      "image": "ekellercu/network-testing:v0.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d27f5b915ebf",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/vagrant/clab-mod2-bgp/lan2",
+        "clab-node-name": "lan2",
+        "clab-node-type": "",
+        "clab-topo-file": "/vagrant/demo2-bgp/diamond-mod2.clab.yml",
+        "containerlab": "mod2-bgp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "rtrA": {
+      "index": "2",
+      "shortname": "rtrA",
+      "longname": "clab-mod2-bgp-rtrA",
+      "fqdn": "rtrA.mod2-bgp.io",
+      "group": "",
+      "labdir": "/vagrant/clab-mod2-bgp/rtrA",
+      "kind": "linux",
+      "image": "ekellercu/network-testing:v0.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d27f5b915ebf",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/vagrant/clab-mod2-bgp/rtrA",
+        "clab-node-name": "rtrA",
+        "clab-node-type": "",
+        "clab-topo-file": "/vagrant/demo2-bgp/diamond-mod2.clab.yml",
+        "containerlab": "mod2-bgp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "rtrB": {
+      "index": "3",
+      "shortname": "rtrB",
+      "longname": "clab-mod2-bgp-rtrB",
+      "fqdn": "rtrB.mod2-bgp.io",
+      "group": "",
+      "labdir": "/vagrant/clab-mod2-bgp/rtrB",
+      "kind": "linux",
+      "image": "ekellercu/network-testing:v0.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d27f5b915ebf",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/vagrant/clab-mod2-bgp/rtrB",
+        "clab-node-name": "rtrB",
+        "clab-node-type": "",
+        "clab-topo-file": "/vagrant/demo2-bgp/diamond-mod2.clab.yml",
+        "containerlab": "mod2-bgp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "rtrC": {
+      "index": "4",
+      "shortname": "rtrC",
+      "longname": "clab-mod2-bgp-rtrC",
+      "fqdn": "rtrC.mod2-bgp.io",
+      "group": "",
+      "labdir": "/vagrant/clab-mod2-bgp/rtrC",
+      "kind": "linux",
+      "image": "ekellercu/network-testing:v0.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d27f5b915ebf",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/vagrant/clab-mod2-bgp/rtrC",
+        "clab-node-name": "rtrC",
+        "clab-node-type": "",
+        "clab-topo-file": "/vagrant/demo2-bgp/diamond-mod2.clab.yml",
+        "containerlab": "mod2-bgp"
+      },
+      "port-bindings": [
+      ]
+    },
+    "rtrD": {
+      "index": "5",
+      "shortname": "rtrD",
+      "longname": "clab-mod2-bgp-rtrD",
+      "fqdn": "rtrD.mod2-bgp.io",
+      "group": "",
+      "labdir": "/vagrant/clab-mod2-bgp/rtrD",
+      "kind": "linux",
+      "image": "ekellercu/network-testing:v0.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-d27f5b915ebf",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/vagrant/clab-mod2-bgp/rtrD",
+        "clab-node-name": "rtrD",
+        "clab-node-type": "",
+        "clab-topo-file": "/vagrant/demo2-bgp/diamond-mod2.clab.yml",
+        "containerlab": "mod2-bgp"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "rtrB",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:62:ae:5f",
+        "peer": "z"
+      },
+      "z": {
+        "node": "rtrC",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:bc:55:ce",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "lan1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:56:7c:cd",
+        "peer": "z"
+      },
+      "z": {
+        "node": "rtrA",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:5d:a7:06",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "rtrA",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:cf:b3:7d",
+        "peer": "z"
+      },
+      "z": {
+        "node": "rtrB",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:68:84:81",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "rtrA",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:fe:8e:24",
+        "peer": "z"
+      },
+      "z": {
+        "node": "rtrC",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:a1:6a:f8",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "rtrD",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:3b:63:5b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "rtrB",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:7b:d2:38",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "rtrD",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:65:4b:db",
+        "peer": "z"
+      },
+      "z": {
+        "node": "rtrC",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:1f:79:dc",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "lan2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:6b:39:77",
+        "peer": "z"
+      },
+      "z": {
+        "node": "rtrD",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:c5:02:bd",
+        "peer": "a"
+      }
+    }
+  ]
+}
